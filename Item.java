@@ -1,6 +1,10 @@
-public class Item {
+import java.io.Serializable;
+import java.util.ArrayList;
+
+public class Item implements Serializable {
     private String name;
     private double price;
+    private ArrayList<PurchaseSite> places;
 
     public Item(String name) {
         this.name = name;
@@ -23,5 +27,8 @@ public class Item {
         price = newPrice;
     }
 
-    private int getOne() {return 1;}
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+
 }
